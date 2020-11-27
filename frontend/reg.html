@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>poll</title>
+
+        <link rel="stylesheet" href="reg.css">
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+
+    </head>
+    <body>
+        <div class="container">
+            <div id="main">
+            <div class="form-container sign-up-container">
+                <form action="connect.php" method="post">
+                    <h1> Register </h1>
+                <label for="First Name"></label>
+                <input id="name" name="firstname" placeholder="FirstName" type="text" required /><br />
+            
+                <label for="Last name"></label>
+                <input id="lastname" name="lastname" placeholder="LastName" type="text" required  /><br />
+                
+                <label for="password"></label>
+                <input id="password" name="password" placeholder="Password" type="password" required /><br />
+                
+                <label for="password"></label>
+                <input id="confirmpassword" placeholder="Confirm Password" name="confirmpassword" type="password" required />
+                
+                <label for="exampleFormControlInput1"></label><br />
+                <input type="email"  id="email" name="email" placeholder="Email Address (name@example.com)"><br />
+               
+                <button id="register" name='register' type='submit' ><h3>Register<h3></button>                  
+                </form>
+
+            </div>
+
+            <div class="form-container sign-in-container">
+                <form method='POST' action='loginaction.php'>
+                    <h1>Login</h1>
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username or firstname" name="firstname" id="firstname" required>
+                    </div>
+        
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" id='password' name='password'required>
+                    </div>
+        
+                  
+                    <button id="login" type='submit' name='logged' ><h3>Sign in</h3></button>
+                
+            </form>
+        </div>
+    </div>
+            
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back! </h1>
+                    <p>To vote or Create poll please login</p>
+                    <button class="ghost" id="signIn">
+                       <h3>Login</h3> 
+                    </button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                 <h1> Hello </h1>
+                 <p>SignUp to get started</p>
+                 <button class="ghost" id="signUp">
+                   <h3>Register</h3>  
+                 </button>
+             </div>
+
+            </div>
+
+            
+        </div>
+    </body>
+    </html>

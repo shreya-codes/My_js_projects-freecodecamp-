@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title> 
+</head>
+<body>
+<form action='newpoll.php' method='post'>
+	
+<label>POLL-NAME</label><br>
+<input id='name' type=required name='pollname'><br>
+
+<label>Total entries</label><br>
+<input id='counted'  type=number name='entry-count'><br>
+ 
+
+ <label>Poll type</label><br>
+ <input type='radio' name='voter' value='Free'>Free
+ <input type='radio' name='voter' value='Controlled'>Controlled
+ <input type='radio' name='voter' value='FullControlled'>FullControlled
+ 
+ <br>
+<button type="submit" name='newpoll'>ADD</button>
+</form>
+
+</body>
+</html>
